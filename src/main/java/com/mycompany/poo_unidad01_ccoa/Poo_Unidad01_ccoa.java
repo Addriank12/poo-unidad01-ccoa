@@ -13,5 +13,7 @@ public class Poo_Unidad01_ccoa {
 
     public static void main(String[] args) {
         System.out.println("Hola Mundo");
+        System.out.println("Hola Ecuador");
+                
     }
 }
