@@ -12,4 +12,47 @@ public class Estudiante {
     int calificacion;
     String carrera;
     double peso;
+    
+   static boolean aprueba(int calificacion)
+   {
+       boolean result = false;
+       if (calificacion >=70)
+       {
+           result=true;
+       }
+       return result;
+   }
+   
+    static String equivalencia(int calificacion) 
+    {
+        String result = "";
+        if (calificacion <70)
+        {
+            result = "Insuficiente";   
+        }
+        else
+        {
+            if (calificacion < 80)
+            {
+                result = "Bueno";
+            }
+            else
+            {
+                if (calificacion < 90)
+                {
+                    result = "Muy bueno";
+                }
+                else
+                {
+                result = "Sobresaliente";
+                }
+            }
+        
+        }
+        return result;    
+    }
+    static double CalcIMC(double peso, double altura)
+    {
+        return peso/(altura*altura);
+    }
 }
