@@ -51,7 +51,7 @@ public class Estudiante {
         }
         return result;    
     }
-    static double CalcIMC(double peso, double altura)
+    static double calcIMC(double peso, double altura)
     {
         return peso/(altura*altura);
     }
